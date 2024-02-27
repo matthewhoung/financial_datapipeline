@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "twfinancial-datapipeline"
+version = "0.1.0"
+description = "side project to practice creating a datapipeline"
+authors = ["matthewhoung <matthewhoung@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.1"
+requests = "^2.31.0"
+pydantic = "^2.6.2"
+loguru = "^0.7.2"
+pymysql = "^1.1.0"
+sqlalchemy = "^2.0.27"
+celery = "^5.3.6"
+apscheduler = "^3.10.4"
+flask = "^3.0.2"
+pyjwt = "^2.8.0"
+fastapi = "^0.110.0"
+uvicorn = "^0.27.1"
+
+[[tool.poetry.packages]]
+include = "financialdata"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
